@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DentCare - Dental Clinic Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>Enquiry@clarehomecare.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+44 7859 950669</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+           <h1 class="m-0 text-primary">
+  <img src="img/homelogo.jpg" alt="Logo" style="width: 80px; height: 70px; margin-right: 8px;">
+  
+</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                 <div class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+  <div class="dropdown-menu m-0">
+    <a href="about.html" class="dropdown-item">About Us</a>
+    <a href="team.html" class="dropdown-item">Personal care</a>
+     <a href="livecare.html" class="dropdown-item">Live in care</a>
+      <a href="respite.html" class="dropdown-item">Respite care</a>
+    <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+    <a href="medication.html" class="dropdown-item">Medication Support</a>
+    <a href="appointment.html" class="dropdown-item">Book a Consultation</a>
+    <a href="contact.html" class="dropdown-item">Contact Us</a>
+  </div>
+</div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 hero-header mb-5"
+     style="background: url(../dentcare-1.0.0/img/clarehomenewnew2.jpg) center/cover no-repeat;">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Live In Care</h1>
+                <a href="" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Live In Care</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+   <div class="container py-5">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
+        <img class="img-fluid rounded shadow" src="../dentcare-1.0.0/img/clarehomenewnew3.jpg" alt="Live-In Care Support">
+      </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.6s">
+        <h5 class="text-primary text-uppercase mb-3">24-Hour Live-In Care</h5>
+        <h1 class="display-6 mb-4">Dedicated Support and Companionship — Around the Clock</h1>
+        <p class="mb-4">
+          Live-in care is a deeply personal service designed for individuals who wish to remain safely and comfortably in their own home, rather than moving into a residential facility. 
+          With Clare Care Services, a professional caregiver lives in the home, providing continuous support, reassurance, and companionship day and night.
+        </p>
+        <p class="mb-4">
+          Whether your loved one is living with dementia, recovering from illness, or simply needs day-to-day assistance, our live-in carers ensure that all their physical, emotional, and social needs are met with dignity and kindness. 
+          We create personalised care plans that adapt as needs change, ensuring consistency and peace of mind for families.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li><i class="fa fa-check text-primary me-2"></i>24-hour supervision and support in the comfort of home</li>
+          <li><i class="fa fa-check text-primary me-2"></i>Assistance with daily routines such as bathing, dressing, and mobility</li>
+          <li><i class="fa fa-check text-primary me-2"></i>Help with household tasks, meal preparation, and shopping</li>
+          <li><i class="fa fa-check text-primary me-2"></i>Medication reminders and health monitoring</li>
+          <li><i class="fa fa-check text-primary me-2"></i>Emotional companionship and mental stimulation</li>
+          <li><i class="fa fa-check text-primary me-2"></i>Flexible care designed around personal preferences and lifestyle</li>
+        </ul>
+        <a href="appointment.html" class="btn btn-primary py-3 px-5">Arrange Live-In Care</a>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h2 class="text-primary mb-3">Why Choose Clare Care Services for Live-In Care?</h2>
+        <p class="mb-4">
+          Our carers are more than just support workers — they become trusted companions. Each member of our team undergoes rigorous background checks, professional training, and continuous supervision to ensure they provide the highest standard of compassionate care.
+        </p>
+        <p class="mb-4">
+          We understand that every individual’s home is their sanctuary. Our carers respect personal space, routines, and cultural preferences while ensuring safety and comfort. Live-in care allows clients to keep their independence, stay close to family, and remain in a familiar environment surrounded by cherished memories.
+        </p>
+        <p class="mb-4">
+          Families can have peace of mind knowing that their loved one is never alone — day or night. Our live-in care plans are flexible, affordable, and tailored to meet the unique needs of each client. Whether you need short-term respite care or long-term support, we are here to help.
+        </p>
+        <h3 class="text-primary mb-3">Common Reasons Families Choose Live-In Care:</h3>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-check text-primary me-2"></i>To support ageing parents who prefer to stay at home</li>
+          <li><i class="fa fa-check text-primary me-2"></i>To assist individuals with dementia or Alzheimer’s</li>
+          <li><i class="fa fa-check text-primary me-2"></i>For post-operative recovery in a familiar environment</li>
+          <li><i class="fa fa-check text-primary me-2"></i>To provide companionship for those living alone</li>
+          <li><i class="fa fa-check text-primary me-2"></i>To reduce hospital readmissions and promote well-being</li>
+        </ul>
+        <p class="mt-4">
+          At Clare Care Services, our mission is simple: to make everyday living easier, safer, and more fulfilling for the people we care for. 
+          We don’t just provide care — we build meaningful relationships based on trust, empathy, and respect.
+        </p>
+      </div>
+    </div>
+  </div>
+    
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> 6/8 High Street<br>
+    Grays, Essex RM17 6LU</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Enquiry@clarehomecare.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+44 7859 950669</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="index.html">CLARE HOMECARE</a>. All Rights Reserved.</p>
+                </div>
+                <!-- <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
+                        Distributed by <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>          
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

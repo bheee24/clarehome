@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clarehomecare</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>Enquiry@clarehomecare.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+44 7859 950669</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            
+            <h1 class="m-0 text-primary">
+  <img src="img/homelogo.jpg" alt="Logo" style="width: 80px; height: 70px; margin-right: 8px;">
+  
+</h1>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+               <div class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+  <div class="dropdown-menu m-0">
+    <a href="about.html" class="dropdown-item">About Us</a>
+    <a href="team.html" class="dropdown-item">Personal care</a>
+     <a href="livecare.html" class="dropdown-item">Live in care</a>
+      <a href="respite.html" class="dropdown-item">Respite care</a>
+    <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+    <a href="medication.html" class="dropdown-item">Medication Support</a>
+    <a href="appointment.html" class="dropdown-item">Book a Consultation</a>
+    <a href="contact.html" class="dropdown-item">Contact Us</a>
+  </div>
+</div>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/domiciliary-residential.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">CLARE Homecare LTD</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Caring for You or Your Loved Ones in the Comfort of Home</h1>
+                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Care Assessment</a>
+                           <a href="contact.html" class="btn py-md-3 px-md-5 animated slideInRight" 
+                             style="background-color: white; color: black;">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/disabled-senior-woman-in-wheelchair-at-home-in-her-living-room-with-her-young-daughter-SBI-305231974.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Compassionate Care You Can Trust</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Supporting Independent Living with Dignity and Respect</h1>
+                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Care Assessment</a>
+                            <a href="contact.html" class="btn py-md-3 px-md-5 animated slideInRight" 
+                             style="background-color: white; color: black;">Contact Us</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Banner Start -->
+  <div class="container-fluid banner mb-5">
+  <div class="container">
+    <div class="row gx-0">
+      <!-- Visiting Hours -->
+      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+        <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
+          <h3 class="text-white mb-3">Visiting Hours</h3>
+          <div class="d-flex justify-content-between text-white mb-3">
+            <h6 class="text-white mb-0">Monday - Friday</h6>
+            <p class="mb-0">8:00am - 8:00pm</p>
+          </div>
+          <div class="d-flex justify-content-between text-white mb-3">
+            <h6 class="text-white mb-0">Saturday</h6>
+            <p class="mb-0">9:00am - 6:00pm</p>
+          </div>
+          <div class="d-flex justify-content-between text-white mb-3">
+            <h6 class="text-white mb-0">Sunday</h6>
+            <p class="mb-0">Closed</p>
+          </div>
+          <a class="btn btn-light" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Request Care Service -->
+     <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+ <form id="care-form">
+  <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
+    <h3 class="text-white mb-3">Request Care Service</h3>
+
+    <select name="care_type" class="form-select bg-light border-0 mb-3" style="height: 40px;" required>
+      <option selected disabled>Select Care Type</option>
+      <option value="Elderly Care">Elderly Care</option>
+      <option value="Disability Support">Disability Support</option>
+      <option value="Live-In Care">Live-In Care</option>
+      <option value="Personal Assistance">Personal Assistance</option>
+    </select>
+
+    <input type="email" name="from_email" class="form-control bg-light border-0 mb-3"
+      placeholder="Your Email" style="height: 40px;" required>
+
+    <textarea name="message" class="form-control bg-light border-0 mb-3"
+      rows="2" placeholder="Additional Message"></textarea>
+
+    <button type="submit" class="btn btn-light">Submit Request</button>
+  </div>
+</form>
+
+</div>
+
+
+      <!-- Speak With Our Team -->
+      <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+        <div class="bg-white d-flex flex-column p-5" style="height: 300px;">
+          <h3 class="text-black mb-3">Speak With Our Care Team</h3>
+          <p class="text-black">
+            Need guidance or want to learn more about our homecare services? 
+            Our friendly team is always ready to help.
+          </p>
+          <h2 class="text-black mb-0">
+            <a href="tel:+0123456789" style="color: black; text-decoration: none;">+447859950669</a>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Banner Start -->
+
+
+    <!-- About Start -->
+   <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title mb-4">
+                    <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
+                    <h1 class="display-5 mb-0">A Trusted Care Home Where Compassion Meets Comfort</h1>
+                </div>
+                <h4 class="text-body fst-italic mb-4">
+                    We provide exceptional care, comfort, and companionship for every resident — because everyone deserves to feel at home.
+                </h4>
+                <p class="mb-4">
+                    At Clare Home Care, we are dedicated to offering high-quality personal and professional care in a warm, family-like environment. 
+                    Our compassionate team ensures that each resident receives the support, respect, and attention they need to live comfortably and happily every day.
+                </p>
+                <div class="row g-3">
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                        <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Carers</h5>
+                        <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Warm Family Environment</h5>
+                    </div>
+                    <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                        <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Support</h5>
+                        <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Personalised Care Plans</h5>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Contact Us</a>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/CLAREHOME PRETTY NURSE.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- About End -->
+
+
+    <!-- Appointment Start -->
+   <div class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-lg-6 py-5">
+        <div class="py-5">
+          <h1 class="display-5 text-white mb-4">
+            We Are a Certified and Compassionate Care Home You Can Trust
+          </h1>
+          <p class="text-white mb-0">
+            At <strong>Clare Home Care</strong>, we are dedicated to providing high-quality personal and professional care 
+            in a warm, safe, and homely environment. Our experienced team supports residents with respect, dignity, and compassion—every day, every moment.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div
+          class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+          data-wow-delay="0.6s"
+        >
+          <h1 class="text-white mb-4">Book a Care Consultation</h1>
+         <form id="booking-form">
+  <div class="row g-3">
+
+    <div class="col-12 col-sm-6">
+      <select name="care_type" class="form-select bg-light border-0" style="height: 55px;" required>
+        <option selected disabled>Select Care Type</option>
+        <option value="Elderly Care">Elderly Care</option>
+        <option value="Dementia Support">Dementia Support</option>
+        <option value="Respite Care">Respite Care</option>
+        <option value="Live-in Care">Live-in Care</option>
+      </select>
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <select name="caregiver" class="form-select bg-light border-0" style="height: 55px;" required>
+        <option selected disabled>Select Caregiver</option>
+        <option value="Caregiver 1">Caregiver 1</option>
+        <option value="Caregiver 2">Caregiver 2</option>
+        <option value="Caregiver 3">Caregiver 3</option>
+      </select>
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <input
+        type="text"
+        name="from_name"
+        class="form-control bg-light border-0"
+        placeholder="Your Name"
+        style="height: 55px;"
+        required
+      />
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <input
+        type="email"
+        name="from_email"
+        class="form-control bg-light border-0"
+        placeholder="Your Email"
+        style="height: 55px;"
+        required
+      />
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <input
+        type="text"
+        name="preferred_date"
+        class="form-control bg-light border-0"
+        placeholder="Preferred Date"
+        style="height: 55px;"
+      />
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <input
+        type="text"
+        name="preferred_time"
+        class="form-control bg-light border-0"
+        placeholder="Preferred Time"
+        style="height: 55px;"
+      />
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-dark w-100 py-3" type="submit">
+        Book Consultation
+      </button>
+    </div>
+
+  </div>
+</form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Appointment End -->
+
+
+    <!-- Service Start -->
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
+  <div class="position-relative h-100 rounded overflow-hidden">
+    <img class="position-absolute w-100 h-100" src="img/clarehomeeee.png" style="object-fit: cover;" alt="Care Home Image">
+  </div>
+</div>
+
+            <div class="col-lg-7">
+                <div class="section-title mb-5">
+                    <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
+                    <h1 class="display-5 mb-0">Compassionate Care & Support for Every Resident</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-personal-care.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                          <h5 class="m-0">
+                       <a href="team.html" class="text-dark text-decoration-none">Personal Care Assistance</a>
+                        </h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-meal-support.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <h5 class="m-0">Meal Preparation & Nutrition</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-7">
+                <div class="row g-5">
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-medication.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <h5 class="m-0">
+                                <a href="medication.html" class="text-dark text-decoration-none"> Medication Support</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-companionship.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <h5 class="m-0">Companionship & Activities</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
+                <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+                    <h3 class="text-white mb-3">Need Assistance?</h3>
+                    <p class="text-white mb-3">
+                        We’re here to support you and your loved ones with care that feels like home.
+                    </p>
+                    <h2 class="text-white mb-0">+44 7859 950669</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Service End -->
+
+
+    <!-- Offer Start -->
+   <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
+        <div class="offer-text text-center rounded p-5">
+          <h1 class="display-5 text-white">Get a Free Initial Care Assessment</h1>
+          <p class="text-white mb-4">
+            At <strong>Clare Home Care</strong>, your loved one’s comfort and safety come first. 
+            Schedule a free, no-obligation care assessment today, and let our friendly care team 
+            create a personalized support plan that meets your family’s needs.
+          </p>
+          <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Book Assessment</a>
+          <a href="about.html" class="btn btn-light py-3 px-5">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Offer End -->
+
+
+    <!-- Pricing Start -->
+   <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="section-title mb-4">
+          <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Care Services</h5>
+          <h1 class="display-5 mb-0">Compassionate Support for Every Stage of Life</h1>
+        </div>
+        <p class="mb-4">
+          At Clare Care Services, we provide personalized home care and support for seniors,
+          individuals with disabilities, and those needing extra help with daily living.  
+          Our caregivers are trained to deliver kindness, respect, and comfort — ensuring every
+          client feels valued and cared for in the comfort of their home.
+        </p>
+        <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Care Support</h5>
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">+44 7859 950669</h1>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
+          
+          <div class="price-item pb-4">
+            <div class="position-relative">
+              <img class="img-fluid rounded-top" src="img/homecarehomecare.jpg" alt="Elderly Home Care">
+              <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
+                <h2 class="text-primary m-0">Home Care</h2>
+              </div>
+            </div>
+            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+              <h4>Personal Home Assistance</h4>
+              <hr class="text-primary w-50 mx-auto mt-0">
+              <div class="d-flex justify-content-between mb-3"><span>Daily Living Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Meal Preparation</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Companionship & Safety</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <a href="contact.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Learn More</a>
+            </div>
+          </div>
+
+          <div class="price-item pb-4">
+            <div class="position-relative">
+              <img class="img-fluid rounded-top" src="img/disabilitycarecare.jpg" alt="Disability Support">
+              <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
+                <h2 class="text-primary m-0">Disability Support</h2>
+              </div>
+            </div>
+            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+              <h4>Personalized Disability Care</h4>
+              <hr class="text-primary w-50 mx-auto mt-0">
+              <div class="d-flex justify-content-between mb-3"><span>Mobility Assistance</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Therapy Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>24/7 Availability</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <a href="contact.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Learn More</a>
+            </div>
+          </div>
+
+          <div class="price-item pb-4">
+            <div class="position-relative">
+              <img class="img-fluid rounded-top" src="img/respitecarecare2.jpg" alt="Respite Care">
+              <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
+                <h2 class="text-primary m-0">Respite Care</h2>
+              </div>
+            </div>
+            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+              <h4>Relief for Family Caregivers</h4>
+              <hr class="text-primary w-50 mx-auto mt-0">
+              <div class="d-flex justify-content-between mb-3"><span>Short-Term Assistance</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-3"><span>Trusted Care Staff</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <div class="d-flex justify-content-between mb-2"><span>Flexible Scheduling</span><i class="fa fa-check text-primary pt-1"></i></div>
+              <a href="contact.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Learn More</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Pricing End -->
+
+
+    <!-- Testimonial Start -->
+   <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
+
+          <div class="testimonial-item text-center text-white">
+            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="Happy client receiving care">
+            <p class="fs-5">
+              “The caregivers from Clare Care Services have been a blessing. They treat my mother
+              with such kindness and respect — always on time, gentle, and truly caring. I finally
+              have peace of mind knowing she’s in good hands.”
+            </p>
+            <hr class="mx-auto w-25">
+            <h4 class="text-white mb-0">— Mary Johnson, Daughter of Client</h4>
+          </div>
+
+          <div class="testimonial-item text-center text-white">
+            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="Smiling elderly client">
+            <p class="fs-5">
+              “I was nervous about having someone new in my home, but the staff made me feel
+              comfortable right away. They listen, they care, and they always go above and beyond.
+              I’m so grateful for their support every day.”
+            </p>
+            <hr class="mx-auto w-25">
+            <h4 class="text-white mb-0">— Thomas Brown, Home Care Client</h4>
+          </div>
+
+          <div class="testimonial-item text-center text-white">
+            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-3.jpg" alt="Caregiver helping senior">
+            <p class="fs-5">
+              “The Clare Care team helped us through a difficult time when my father needed extra
+              assistance. Their compassion and professionalism made all the difference for our family.”
+            </p>
+            <hr class="mx-auto w-25">
+            <h4 class="text-white mb-0">— Sarah Williams, Family Member</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Testimonial End -->
+
+
+  
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> 6/8 High Street<br>
+    Grays, Essex RM17 6LU</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Enquiry@clarehomecare.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+44 7859 950669</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="index.html">CLARE HOMECARE</a>. All Rights Reserved.</p>
+                </div>
+                <!-- <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
+                        Distributed by <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>              
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("x84QsMZo3xxrYhYgd");
+  })();
+</script>
+<script>
+  document.getElementById("booking-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_n6uvkyi",
+      "template_96hg45d",
+      this
+    ).then(
+      function () {
+        alert("Consultation booked successfully ✅");
+         document.getElementById("booking-form").reset();
+      },
+      function (error) {
+        alert("Failed to book consultation ❌");
+        console.log(error);
+      }
+    );
+  });
+</script>
+
+
+<script>
+  document.getElementById("care-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_n6uvkyi",
+      "template_kxoo06h",
+      this
+    ).then(
+      function () {
+        alert("Request sent successfully ✅");
+        document.getElementById("care-form").reset();
+      },
+      function (error) {
+        alert("Failed to send request ❌");
+        console.log(error);
+      }
+    );
+  });
+</script>
+
+
+
+</body>
+
+</html>
