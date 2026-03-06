@@ -47,13 +47,31 @@
     </div>
     <!-- Spinner End -->
 
+<!-- Website Welcome Popup -->
+<!-- CQC Notice Popup -->
+<div id="noticePopup" class="popup">
+  <div class="popup-box">
+    <h2>⚠ Important Notice</h2>
+
+    <p>
+      We are currently <strong>not providing personal care services</strong>
+      at the moment as we are waiting for our
+      <strong>CQC approval</strong>.
+    </p>
+
+    <p>Thank you for your patience and understanding.</p>
+
+    <button onclick="closePopup()">Understood</button>
+  </div>
+</div>
+
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Monday - Sunday  </small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -185,17 +203,17 @@
         <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
           <h3 class="text-white mb-3">Care Availability</h3>
           <div class="d-flex justify-content-between text-white mb-3">
-            <h6 class="text-white mb-0">Monday - Friday</h6>
-            <p class="mb-0">Flexible Home Visits</p>
+            <h6 class="text-white mb-0">Flexible Home VisitsMonday - Sunday</h6>
+            <p class="mb-0">Monday - Sunday</p>
           </div>
           <div class="d-flex justify-content-between text-white mb-3">
-            <h6 class="text-white mb-0">Saturday</h6>
-            <p class="mb-0">Available on Request</p>
+            <h6 class="text-white mb-0">Office Hours</h6>
+            <p class="mb-0">Monday - Friday</p>
           </div>
-          <div class="d-flex justify-content-between text-white mb-3">
+          <!-- <div class="d-flex justify-content-between text-white mb-3">
             <h6 class="text-white mb-0">Sunday</h6>
             <p class="mb-0">Closed</p>
-          </div>
+          </div> -->
           <a class="btn btn-light" href="contact.html">Contact Us</a>
         </div>
       </div>
@@ -294,14 +312,29 @@
     <div class="row gx-5">
       <div class="col-lg-6 py-5">
         <div class="py-5">
-          <h1 class="display-5 text-white mb-4">
-            We Are a Certified and Compassionate Care Home You Can Trust
-          </h1>
-          <p class="text-white mb-0">
-            At <strong>Clare Home Care</strong>, we are dedicated to providing high-quality personal and professional care 
-            in a warm, safe, and homely environment. Our experienced team supports residents with respect, dignity, and compassion—every day, every moment.
-          </p>
-        </div>
+  <h1 class="display-5 text-white mb-4">
+    HOME CARE SERVICE
+  </h1>
+
+  <p class="text-white mb-4">
+    At <strong>Clare Home Care</strong>, we are dedicated to providing 
+    professional compassionate care for you and your loved ones right where they feel at home.
+  </p>
+
+  <!-- Our Services Title -->
+  <h3 class="text-white mb-3">Our Services</h3>
+
+  <!-- Services List -->
+  <ul class="list-unstyled text-white">
+    <li class="mb-2">✔ Errand Services</li>
+    <li class="mb-2">✔ Companionship & Emotional Support</li>
+    <li class="mb-2">✔ Medication Reminders</li>
+    <li class="mb-2">✔ Meal Preparation</li>
+    <li class="mb-2">✔ Light Housekeeping</li>
+    <li class="mb-2">✔ Post-Hospital Care</li>
+  </ul>
+</div>
+
       </div>
 
       <div class="col-lg-6">
@@ -772,6 +805,17 @@ all delivered safely in their own home.
       }
     );
   });
+</script>
+
+<script>// when page loads
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("noticePopup").style.display = "flex";
+});
+
+function closePopup(){
+  document.getElementById("noticePopup").style.display = "none";
+}
+
 </script>
 
 
