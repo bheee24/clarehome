@@ -46,7 +46,32 @@
         </div>
     </div>
     <!-- Spinner End -->
+          <!-- Website Welcome Popup -->
+<!-- CQC Notice Popup -->
+<div id="noticePopup" class="popup">
+  <div class="popup-box">
+    <h2>⚠ Important Notice</h2>
 
+    <p>We are currently providing the following services (except personal care):</p>
+
+    <ul>
+      <li>✔ Errand Services</li>
+      <li>✔ Companionship & Emotional Support</li>
+      <li>✔ Medication Reminders</li>
+      <li>✔ Meal Preparation</li>
+      <li>✔ Light Housekeeping</li>
+    </ul>
+
+    <p>
+      We are <strong>not providing personal care services</strong> at the moment
+      as we are waiting for our <strong>CQC approval</strong>.
+    </p>
+
+    <p>Thank you for your patience and understanding.</p>
+
+    <button onclick="closePopup()">Understood</button>
+  </div>
+</div>
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
@@ -295,6 +320,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <script>// when page loads
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("noticePopup").style.display = "flex";
+});
+
+function closePopup(){
+  document.getElementById("noticePopup").style.display = "none";
+}
+
+</script>
 </body>
 
 </html>
