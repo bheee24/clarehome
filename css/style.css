@@ -328,8 +328,7 @@ h6,
 .contact-numbers{display:inline-flex;gap:.5rem;align-items:center;flex-wrap:wrap}
 .contact-numbers .primary-number{font-weight:700}
 .contact-numbers .primary-number a{color:inherit;text-decoration:none}
-.contact-numbers .secondary-number{font-size:.95em;color:#6c757d}
-.contact-numbers.text-white .secondary-number{color:rgba(255,255,255,0.85)}
+.contact-numbers .secondary-number{font-size:.95em;color:#ffffff}
 .contact-numbers .secondary-number a{color:inherit;text-decoration:none}
 
 
