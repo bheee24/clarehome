@@ -4,6 +4,182 @@
     --secondary: #5779f5;
     --light: #EEF9FF;
     --dark: #091E3E;
+    --font-family-base: 'Jost', sans-serif;
+    --font-family-heading: 'Jost', sans-serif;
+    --body-color: #1f2733;
+    --body-bg: #f9fbff;
+    --border-radius: .85rem;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+.btn,
+.navbar-light .navbar-nav .nav-link,
+.tooltip,
+.popover {
+    font-family: var(--font-family-base) !important;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--body-color);
+    background-color: var(--body-bg);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-heading);
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(2.75rem, 2.2rem + 2vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(2.1rem, 1.8rem + 1.2vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.7rem, 1.55rem + 1vw, 2.5rem);
+}
+
+p,
+.lead,
+.text-body {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+select {
+    border-radius: var(--border-radius);
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid rgba(9, 30, 62, .15);
+    padding: .85rem 1rem;
+    background: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(87, 121, 245, .7);
+    box-shadow: 0 0 0 .15rem rgba(87, 121, 245, .15);
+}
+
+.btn {
+    font-family: var(--font-family-base);
+    border-radius: 1rem;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+}
+
+.btn-dark {
+    background: #091E3E;
+    border-color: #091E3E;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background: #000066;
+    border-color: #000066;
+}
+
+button:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible,
+.nav-link:focus-visible {
+    outline: 3px solid rgba(87, 121, 245, .55);
+    outline-offset: 2px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: .75rem 1rem;
+}
+
+.carousel-caption {
+    padding: 3rem 1.5rem;
+}
+
+.carousel-caption h1 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    line-height: 1.05;
+}
+
+.carousel-caption h5 {
+    letter-spacing: .18em;
+    font-weight: 600 !important;
+}
+
+.carousel-caption p {
+    max-width: 42rem;
+    margin: 0 auto 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .carousel-caption {
+        padding: 2rem 1rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: .95rem;
+    }
 }
 
 h1,
@@ -31,7 +207,7 @@ h6,
 }
 
 .btn-primary,.btn-secondary {
-    color:  #000066;
+    color:  white;
 }
 
 .btn-primary:hover {
