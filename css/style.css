@@ -390,6 +390,22 @@ h6,
     transform: scale(1.15);
 }
 
+.application-form-card {
+    border: 1px solid rgba(9, 30, 62, .08);
+}
+
+.application-info-list li {
+    margin-bottom: .75rem;
+}
+
+.application-note {
+    border: 1px solid rgba(87, 121, 245, .2);
+    background: #f5f9ff;
+    color: var(--primary);
+    border-radius: 1rem;
+    padding: .9rem 1rem;
+}
+
 .team-item .team-text::after,
 .service-item .bg-light::after {
     position: absolute;
