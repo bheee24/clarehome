@@ -124,58 +124,477 @@
 
                     <div class="col-lg-7 wow slideInUp" data-wow-delay="0.3s">
                         <div class="application-form-card bg-white rounded-4 shadow-sm p-4 p-lg-5">
+                            <div class="print-form-header d-none d-print-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/logo2.jpg" alt="Clare Home Care logo" class="print-logo me-3" loading="lazy" decoding="async">
+                                    <div>
+                                        <p class="mb-1 fw-bold">CLARE HOME CARE LTD</p>
+                                        <p class="mb-0">6/8 High Street, Grays, RM17 6LU</p>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <p class="mb-1 fw-semibold">Job Application Form</p>
+                                    <p class="mb-0">Enquiry@clarehomecare.com | 01375 506144</p>
+                                </div>
+                            </div>
+                            <div class="text-center mb-4">
+                                <h4 class="mb-1">CLARE HOME CARE LTD JOB APPLICATION FORM</h4>
+                                <p class="mb-1 text-primary fw-semibold">Please complete the form below</p>
+                                <p class="text-muted mb-0">Private & Confidential</p>
+                            </div>
                             <form id="job-application-form" enctype="multipart/form-data">
                                 <input type="hidden" name="_subject" value="New Job Application from Clare Home Care Website">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_template" value="table">
                                 <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label class="form-label" for="full_name">Full Name</label>
-                                        <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Your full name" required>
+                                    <div class="col-12">
+                                        <h5 class="mb-3">1. Application Details</h5>
                                     </div>
                                     <div class="col-md-6">
+                                        <label class="form-label" for="position_applied">Position Applied For</label>
+                                        <input type="text" id="position_applied" name="position_applied" class="form-control" placeholder="Position applied for" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="where_seen">Where did you see this?</label>
+                                        <input type="text" id="where_seen" name="where_seen" class="form-control" placeholder="Where did you see this?">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="post_advertised">Post advertised?</label>
+                                        <input type="text" id="post_advertised" name="post_advertised" class="form-control" placeholder="Post advertised">
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">2. Personal Details</h5>
+                                        <p class="text-muted">Please complete in block letters where possible.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="surname">Surname</label>
+                                        <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="first_names">First Names</label>
+                                        <input type="text" id="first_names" name="first_names" class="form-control" placeholder="First names" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="address">Address</label>
+                                        <input type="text" id="address" name="address" class="form-control" placeholder="Current address in full" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="postcode">Post Code</label>
+                                        <input type="text" id="postcode" name="postcode" class="form-control" placeholder="Post Code">
+                                    </div>
+                                    <div class="col-md-4">
                                         <label class="form-label" for="email">Email Address</label>
                                         <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label" for="phone">Phone Number</label>
-                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your phone number" required>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="work_phone">Telephone (Work)</label>
+                                        <input type="tel" id="work_phone" name="work_phone" class="form-control" placeholder="Work telephone number">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="mobile">Mobile Number</label>
+                                        <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Mobile number" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="driving_license">Full Driving Licence</label>
+                                        <select id="driving_license" name="driving_license" class="form-select" required>
+                                            <option value="" selected disabled>Choose an option</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="car_available">Car Available</label>
+                                        <select id="car_available" name="car_available" class="form-select" required>
+                                            <option value="" selected disabled>Choose an option</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="date_of_birth">Date of Birth</label>
+                                        <input type="date" id="date_of_birth" name="date_of_birth" class="form-control">
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label" for="position">Role Interested In</label>
-                                        <select id="position" name="position" class="form-select" required>
-                                            <option value="" selected disabled>Select a position</option>
-                                            <option value="Care Worker">Care Worker</option>
-                                            <option value="Senior Care Assistant">Senior Care Assistant</option>
-                                            <option value="Support Worker">Support Worker</option>
-                                            <option value="Live-In Carer">Live-In Carer</option>
-                                            <option value="Administrator">Administrator</option>
+                                        <label class="form-label" for="national_insurance">National Insurance No.</label>
+                                        <input type="text" id="national_insurance" name="national_insurance" class="form-control" placeholder="National Insurance number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="previous_other_names">Previous / other names</label>
+                                        <input type="text" id="previous_other_names" name="previous_other_names" class="form-control" placeholder="Previous or other names">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="place_of_birth">Place of Birth</label>
+                                        <input type="text" id="place_of_birth" name="place_of_birth" class="form-control" placeholder="Place of birth">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="height">Height</label>
+                                        <input type="text" id="height" name="height" class="form-control" placeholder="Height">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="previous_address">Previous address (if less than 5 years)</label>
+                                        <input type="text" id="previous_address" name="previous_address" class="form-control" placeholder="Previous address in full">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="previous_postcode">Previous postcode</label>
+                                        <input type="text" id="previous_postcode" name="previous_postcode" class="form-control" placeholder="Previous postcode">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="previous_address_from">As from (date)</label>
+                                        <input type="date" id="previous_address_from" name="previous_address_from" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">3. Employment History</h5>
+                                        <p class="text-muted">Most recent job first. Please use extra sheet if necessary.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="border rounded-3 p-3 mb-3">
+                                            <div class="row g-3">
+                                                <div class="col-md-3">
+                                                    <label class="form-label" for="employment_from_1">From</label>
+                                                    <input type="date" id="employment_from_1" name="employment_from_1" class="form-control">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="form-label" for="employment_to_1">To</label>
+                                                    <input type="date" id="employment_to_1" name="employment_to_1" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="employer_1">Name / Address of Employer</label>
+                                                    <input type="text" id="employer_1" name="employer_1" class="form-control" placeholder="Employer name and address">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="job_title_1">Job Title</label>
+                                                    <input type="text" id="job_title_1" name="job_title_1" class="form-control" placeholder="Job title">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="salary_1">Salary</label>
+                                                    <input type="text" id="salary_1" name="salary_1" class="form-control" placeholder="Salary">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="duties_1">Duties & Responsibilities</label>
+                                                    <textarea id="duties_1" name="duties_1" class="form-control" rows="4" placeholder="Describe your key responsibilities"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border rounded-3 p-3">
+                                            <div class="row g-3">
+                                                <div class="col-md-3">
+                                                    <label class="form-label" for="employment_from_2">From</label>
+                                                    <input type="date" id="employment_from_2" name="employment_from_2" class="form-control">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label class="form-label" for="employment_to_2">To</label>
+                                                    <input type="date" id="employment_to_2" name="employment_to_2" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="employer_2">Name / Address of Employer</label>
+                                                    <input type="text" id="employer_2" name="employer_2" class="form-control" placeholder="Employer name and address">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="job_title_2">Job Title</label>
+                                                    <input type="text" id="job_title_2" name="job_title_2" class="form-control" placeholder="Job title">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="salary_2">Salary</label>
+                                                    <input type="text" id="salary_2" name="salary_2" class="form-control" placeholder="Salary">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="duties_2">Duties & Responsibilities</label>
+                                                    <textarea id="duties_2" name="duties_2" class="form-control" rows="4" placeholder="Describe your key responsibilities"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">3. Education & Qualifications</h5>
+                                        <p class="text-muted">Please use extra sheet if necessary.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row g-3">
+                                            <div class="col-md-3">
+                                                <label class="form-label" for="education_from_1">From</label>
+                                                <input type="date" id="education_from_1" name="education_from_1" class="form-control">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label class="form-label" for="education_to_1">To</label>
+                                                <input type="date" id="education_to_1" name="education_to_1" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="establishment_1">Name & Address of Establishment</label>
+                                                <input type="text" id="establishment_1" name="establishment_1" class="form-control" placeholder="Establishment name and address">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="qualification_1">Details of Qualifications / Courses attended</label>
+                                                <textarea id="qualification_1" name="qualification_1" class="form-control" rows="3" placeholder="Qualification or course details"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row g-3">
+                                            <div class="col-md-3">
+                                                <label class="form-label" for="education_from_2">From</label>
+                                                <input type="date" id="education_from_2" name="education_from_2" class="form-control">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label class="form-label" for="education_to_2">To</label>
+                                                <input type="date" id="education_to_2" name="education_to_2" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="establishment_2">Name & Address of Establishment</label>
+                                                <input type="text" id="establishment_2" name="establishment_2" class="form-control" placeholder="Establishment name and address">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="qualification_2">Details of Qualifications / Courses attended</label>
+                                                <textarea id="qualification_2" name="qualification_2" class="form-control" rows="3" placeholder="Qualification or course details"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">4. Other Information</h5>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="other_experience">Why do you think your previous experience, whether at work or otherwise, is relevant to this job?</label>
+                                        <textarea id="other_experience" name="other_experience" class="form-control" rows="5" placeholder="Please use an extra sheet if necessary"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">5. Next of Kin Details</h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="next_of_kin_name">Name</label>
+                                        <input type="text" id="next_of_kin_name" name="next_of_kin_name" class="form-control" placeholder="Next of kin name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="next_of_kin_relationship">Relationship</label>
+                                        <input type="text" id="next_of_kin_relationship" name="next_of_kin_relationship" class="form-control" placeholder="Relationship">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="next_of_kin_mobile">Mobile Number</label>
+                                        <input type="tel" id="next_of_kin_mobile" name="next_of_kin_mobile" class="form-control" placeholder="Mobile number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="next_of_kin_email">Email Address</label>
+                                        <input type="email" id="next_of_kin_email" name="next_of_kin_email" class="form-control" placeholder="Email address">
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">6. Reason for Leaving Last Employment</h5>
+                                        <textarea id="reason_for_leaving" name="reason_for_leaving" class="form-control" rows="4" placeholder="Reason for leaving your last job"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">7. Medical History</h5>
+                                        <p class="text-muted">Please give details of any disabilities, serious illnesses suffered in the past 2 years, days lost from work, hospitalisation, etc.</p>
+                                        <textarea id="medical_history" name="medical_history" class="form-control" rows="4" placeholder="Medical history details"></textarea>
+                                        <div class="form-text">Do you have a disability you wish to tell us about? If so, are you registered disabled at a Job Centre?</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">8. References</h5>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="do_not_contact_referees" name="do_not_contact_referees">
+                                            <label class="form-check-label" for="do_not_contact_referees">I do not wish my referees to be contacted without prior knowledge.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_1_name">Referee 1 Name</label>
+                                                <input type="text" id="referee_1_name" name="referee_1_name" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_1_occupation">Occupation</label>
+                                                <input type="text" id="referee_1_occupation" name="referee_1_occupation" class="form-control" placeholder="Occupation">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="referee_1_address">Address</label>
+                                                <input type="text" id="referee_1_address" name="referee_1_address" class="form-control" placeholder="Address">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_1_phone">Daytime telephone no.</label>
+                                                <input type="tel" id="referee_1_phone" name="referee_1_phone" class="form-control" placeholder="Telephone number">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_1_email">Email</label>
+                                                <input type="email" id="referee_1_email" name="referee_1_email" class="form-control" placeholder="Email address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_2_name">Referee 2 Name</label>
+                                                <input type="text" id="referee_2_name" name="referee_2_name" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_2_occupation">Occupation</label>
+                                                <input type="text" id="referee_2_occupation" name="referee_2_occupation" class="form-control" placeholder="Occupation">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="referee_2_address">Address</label>
+                                                <input type="text" id="referee_2_address" name="referee_2_address" class="form-control" placeholder="Address">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_2_phone">Daytime telephone no.</label>
+                                                <input type="tel" id="referee_2_phone" name="referee_2_phone" class="form-control" placeholder="Telephone number">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="referee_2_email">Email</label>
+                                                <input type="email" id="referee_2_email" name="referee_2_email" class="form-control" placeholder="Email address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">9. Availability</h5>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="start_date">Available to start work</label>
+                                        <input type="date" id="start_date" name="start_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="hours_available">Number of hours available</label>
+                                        <input type="text" id="hours_available" name="hours_available" class="form-control" placeholder="Hours available">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="weekends">Willing to work weekends?</label>
+                                        <select id="weekends" name="weekends" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">10. Equal Opportunities</h5>
+                                        <p class="text-muted">This information is treated in the strictest confidence.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="sex">Sex</label>
+                                        <select id="sex" name="sex" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label" for="availability">Availability</label>
-                                        <select id="availability" name="availability" class="form-select">
-                                            <option value="Full-time">Full-time</option>
-                                            <option value="Part-time">Part-time</option>
-                                            <option value="Flexible">Flexible</option>
+                                        <label class="form-label" for="ethnicity">I would describe myself as</label>
+                                        <select id="ethnicity" name="ethnicity" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Black (African)">Black (African)</option>
+                                            <option value="Black (British)">Black (British)</option>
+                                            <option value="Black (Afro Caribbean)">Black (Afro Caribbean)</option>
+                                            <option value="Black (Asian)">Black (Asian)</option>
+                                            <option value="White (British/European)">White (British/European)</option>
+                                            <option value="Cypriot (Greek)">Cypriot (Greek)</option>
+                                            <option value="Cypriot (Turkish)">Cypriot (Turkish)</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="ethnicity_other">If Other, please specify</label>
+                                        <input type="text" id="ethnicity_other" name="ethnicity_other" class="form-control" placeholder="Other ethnicity">
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <h5 class="mb-3">11. Disclosure of Criminal Background</h5>
+                                        <p class="text-muted">Due to the nature of your appointment as Care Assistant/Domestic Assistant, Clare Home Care Ltd must enquire into the character and background of all staff.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="criminal_conviction">Have you any convictions, bind-over orders, cautions or pending prosecutions?</label>
+                                        <select id="criminal_conviction" name="criminal_conviction" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="criminal_details">If yes, please give details</label>
+                                        <textarea id="criminal_details" name="criminal_details" class="form-control" rows="4" placeholder="Provide details if applicable"></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="dbs_permission">I give my permission for a DBS check to be made</label>
+                                        <select id="dbs_permission" name="dbs_permission" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label" for="location">Location</label>
-                                        <input type="text" id="location" name="location" class="form-control" placeholder="Your preferred location">
+                                        <label class="form-label" for="declaration_name">Signature (Type full name)</label>
+                                        <input type="text" id="declaration_name" name="declaration_name" class="form-control" placeholder="Full name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="declaration_date">Date</label>
+                                        <input type="date" id="declaration_date" name="declaration_date" class="form-control">
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label" for="message">Tell us about yourself</label>
-                                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Share your experience, qualifications, and why you want to join Clare Home Care"></textarea>
+                                        <hr>
+                                        <h5 class="mb-3">12. Office Use Only</h5>
                                     </div>
-                                    <div class="col-12">
-                                        <label class="form-label" for="cv">Upload CV</label>
-                                        <input type="file" id="cv" name="cv" class="form-control" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="application_sent_date">Application form sent</label>
+                                        <input type="date" id="application_sent_date" name="application_sent_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="application_returned_date">Application form returned</label>
+                                        <input type="date" id="application_returned_date" name="application_returned_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="interview_date">Invited to interview</label>
+                                        <input type="date" id="interview_date" name="interview_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="references_requested_date">Request references</label>
+                                        <input type="date" id="references_requested_date" name="references_requested_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="references_received_date">References received</label>
+                                        <input type="date" id="references_received_date" name="references_received_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="rejection_date">Rejection</label>
+                                        <input type="date" id="rejection_date" name="rejection_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="offer_made_date">Offer made</label>
+                                        <input type="date" id="offer_made_date" name="offer_made_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="start_date_office">Start date</label>
+                                        <input type="date" id="start_date_office" name="start_date_office" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="induction_pack_date">Induction pack</label>
+                                        <input type="date" id="induction_pack_date" name="induction_pack_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="training_date">Training</label>
+                                        <input type="date" id="training_date" name="training_date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="uniform_tabard">Uniform/Tabard</label>
+                                        <select id="uniform_tabard" name="uniform_tabard" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="id_photo">ID photo</label>
+                                        <select id="id_photo" name="id_photo" class="form-select">
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
                                     </div>
                                     <div class="col-12">
                                         <div class="application-note">
-                                            <i class="fas fa-info-circle me-2"></i>Your application will be sent directly to our enquiry inbox.
-                                        </div>
+                                            <i class="fas fa-info-circle me-2"></i>Please return completed form to Clare Home Care Ltd, 6/8 High Street, Grays, RM17 6LU.</div>
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-primary w-100 py-3" type="submit">Send Application</button>
