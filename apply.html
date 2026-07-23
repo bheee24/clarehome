@@ -146,6 +146,7 @@
                                 <input type="hidden" name="_subject" value="New Job Application from Clare Home Care Website">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_cc" value="">
                                 <div class="row g-3">
                                     <div class="col-12">
                                         <h5 class="mb-3">1. Application Details</h5>
@@ -586,11 +587,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label" for="id_photo">ID photo</label>
-                                        <select id="id_photo" name="id_photo" class="form-select">
-                                            <option value="" selected disabled>Select</option>
-                                            <option value="Yes">Yes</option>
-                                            <option value="No">No</option>
-                                        </select>
+                                        <input type="file" id="id_photo" name="id_photo" class="form-control" accept="image/*,application/pdf">
                                     </div>
                                     <div class="col-12">
                                         <div class="application-note">
@@ -647,6 +644,7 @@
             submitButton.textContent = 'Sending...';
 
             const formData = new FormData(this);
+            this.querySelector('input[name="_cc"]').value = 'lara.fowode@clarehomecare.com';
 
             fetch('https://formsubmit.co/ajax/Enquiry@clarehomecare.com', {
                 method: 'POST',
