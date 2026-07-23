@@ -643,8 +643,8 @@
             submitButton.disabled = true;
             submitButton.textContent = 'Sending...';
 
-            const formData = new FormData(this);
             this.querySelector('input[name="_cc"]').value = 'lara.fowode@clarehomecare.com';
+            const formData = new FormData(this);
 
             fetch('https://formsubmit.co/ajax/Enquiry@clarehomecare.com', {
                 method: 'POST',
